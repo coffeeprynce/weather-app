@@ -11,11 +11,12 @@ button.addEventListener('click', function(event){
 event.preventDefault()
 
 
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=Atlanta,Georgia,US&limit=5&appid=4b947dbc2156a16f9a132f38ab81ae8a')
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=city,country&limit=5&appid=4b947dbc2156a16f9a132f38ab81ae8a')
     .then(response => response.json())
     .then(data => console.log(data))
     
     
+
     //lat = 'http://api.openweathermap.org/geo/1.0/direct?q=' + inputValue + '&format=' + display
     //lon = 'http://api.openweathermap.org/geo/1.0/direct?q=' + inputValue + '&format=' + display
 
